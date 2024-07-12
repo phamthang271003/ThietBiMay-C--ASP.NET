@@ -1,0 +1,168 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.New>
+
+@{
+    ViewBag.Title = "Danh sách tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="content">
+    <h2>Quản lý tin tức</h2>
+
+    <a class="btn btn-primary mb-3" href="/Admin/News/Create">Thêm tin tức</a>
+    <a href="#" class="btn btn-danger mb-3" id="BtnDeleteAll">Xóa</a>
+
+    <div class="card-body">
+
+        <table class="table table-bordered ">
+            <tr>
+                <th><input type="checkbox" id="SelectAll" /></th>
+                <th>
+                    STT
+                </th>
+                <th>
+                    Hình ảnh
+                </th>
+                <th>
+                    Tiêu đề
+                </th>
+                <th>
+                    Ngày tạo
+                </th>
+                <th>Hiển thị</th>
+                <th>
+                    Thứ tự
+                </th>
+                <th>
+
+                </th>
+            </tr>
+
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                foreach (var item in Model)
+                {
+                    var strCheck = item.IsActive ? "<i class='fa fa-check text-success'></i>" : "<i class='fas fa-times text-danger'></i>";
+                    <tr id="trow_@item.Id">
+                        <td><input type="checkbox" class="cbkItem" value="@item.Id" /></td>
+                        <td>@i </td>
+                        <td> <img src="@item.Image" alt="Alternate Text" width="100" /></td>
+                        <td>@item.Title </td>
+                        <td>@item.CreateDate.ToString("dd/MM/yyyy") </td>
+                        <td class="text-center">
+                            <a href='#' data-id="@item.Id" class="btnActive">@Html.Raw(strCheck)</a>
+                        </td>
+                        <td>
+                            <a href="/Admin/News/Edit/@item.Id" class="btn btn-primary">Sửa</a>
+                            <a href="#" data-id="@item.Id" class="btn  btn-danger btnDelete">Xóa</a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5">Không có bản ghi nào!!!</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('body').on('click', '#BtnDeleteAll', function (e) {
+            e.preventDefault();
+            var str = "";
+            var checkbox = $(this).parents('.content').find('tr td input:checkbox');
+            var i = 0;
+            checkbox.each(function () {
+                if (this.checked) {
+                    var _id = $(this).val();
+                    if (i === 0) {
+                        str += _id;
+                    } else {
+                        str += "," + _id;
+                    }
+                    i++;
+                } else {
+                    checkbox.attr('selected', '');
+                }
+            });
+            if (str.length > 0) {
+                var conf = confirm('Bạn có muốn xóa các bản ghi này hay không?');
+                if (conf === true) {
+                    $.ajax({
+                        url: '/admin/news/deleteAll',
+                        type: 'POST',
+                        data: { ids: str },
+                        success: function (rs) {
+                            if (rs.success) {
+                                location.reload();
+                            }
+                        }
+                    });
+                }
+            }
+        });
+
+        $('body').on('change', '#SelectAll', function () {
+            var checkStatus = this.checked;
+            var checkbox = $(this).parents('.card-body').find('tr td input:checkbox');
+            checkbox.each(function () {
+                this.checked = checkStatus;
+                if (this.checked) {
+                    checkbox.attr('selected', 'checked');
+                } else {
+                    checkbox.attr('selected', '');
+                }
+            });
+        });
+        $('body').on('click', '.btnDelete', function () {
+            var id = $(this).data("id");
+            var conf = confirm('Bạn có muốn xóa bản ghi này không?');
+            if (conf === true) {
+                $.ajax({
+                    url: '/Admin/News/Delete',
+                    type: 'POST',
+                    data: { id: id },
+                    success: function (rs) {
+                        if (rs.success) {
+                            $('#trow_' + id).remove();
+                        }
+                    }
+                });
+            }
+        });
+
+        $('body').on('click', '.btnActive', function (e) {
+            e.preventDefault();
+            var btn = $(this);
+            var id = btn.data("id");
+            $.ajax({
+                url: '/admin/news/IsActive',
+                type: 'POST',
+                data: { id: id },
+                success: function (rs) {
+                    if (rs.success) {
+                        if (rs.isAcive) {
+                            btn.html("<i class='fa fa-check text-success'></i>");
+                            //$(this).find("i").removeClass("fas fa-times text-danger")
+                            //$(this).find("i").addClass("fa fa-check text-success");
+                        } else {
+                            btn.html("<i class='fas fa-times text-danger'></i>");
+                        }
+                    }
+
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+

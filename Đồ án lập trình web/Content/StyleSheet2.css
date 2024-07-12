@@ -1,0 +1,485 @@
+﻿
+body {
+    font-size: 16px;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*header*/
+.contact-phone {
+    margin: 0;
+    color: #fff;
+}
+
+    .contact-phone a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .contact-phone p {
+        margin: 0;
+    }
+
+.icon-header {
+    color: #fff;
+}
+nav.navbar.navbar-expand-lg {
+    background-color: #f1ced0;
+}
+
+
+li.nav-item {
+    margin: 0px 30px;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+
+.navbar-nav .nav-item a.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: #e10000 !important;
+    font-size: 16px;
+}
+
+.col-md-9 .navbar .container-fluid .collapse > ul.navbar-nav > li.active > a {
+    color: #e10000 !important;
+}
+
+
+
+.theme-search {
+    width: 340px;
+    height: 42px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.contact-phone {
+    display: inline-block;
+}
+
+.account-header {
+    display: inline-block;
+}
+/*header*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.cd__intro {
+    padding: 60px 30px;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+.cd__intro,
+.cd__credit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+
+    .cd__intro h1 {
+        font-size: 18pt;
+        padding-bottom: 15px;
+    }
+
+    .cd__intro p {
+        font-size: 14px;
+    }
+
+.cd__action {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+    .cd__action a.cd__btn {
+        text-decoration: none;
+        color: #666;
+        border: 2px solid #666;
+        padding: 10px 15px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+        .cd__action a.cd__btn:hover {
+            background: #666;
+            color: #fff;
+            transition: .3s;
+            -webkit-transition: .3s;
+        }
+
+    .cd__action .cd__btn:before {
+        font-family: FontAwesome;
+        font-weight: normal;
+        margin-right: 10px;
+    }
+
+.down:before {
+    content: "\f019"
+}
+
+.back:before {
+    content: "\f112"
+}
+
+.cd__credit {
+    padding: 12px;
+    font-size: 9pt;
+    margin-top: 40px;
+}
+
+    .cd__credit span:before {
+        font-family: FontAwesome;
+        color: #e41b17;
+        content: "\f004";
+    }
+
+    .cd__credit a {
+        color: #333;
+        text-decoration: none;
+    }
+
+        .cd__credit a:hover {
+            color: #1DBF73;
+        }
+
+            .cd__credit a:hover:after {
+                font-family: FontAwesome;
+                content: "\f08e";
+                font-size: 9pt;
+                position: absolute;
+                margin: 3px;
+            }
+
+.cd__main {
+    background: #fff;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cd__main {
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1360px) {
+    .cd__main {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+:root {
+    --font1: 'Heebo', sans-serif;
+    --font2: 'Fira Sans Extra Condensed', sans-serif;
+    --font3: 'Roboto', sans-serif;
+    --btnbg: #ffcc00;
+    --btnfontcolor: rgb(61, 61, 61);
+    --btnfontcolorhover: rgb(255, 255, 255);
+    --btnbghover: #ffc116;
+    --btnactivefs: rgb(241, 195, 46);
+    --label-index: #960796;
+    --danger-index: #5bc257;
+    /* PAGINATE */
+    --link-color: #000;
+    --link-color-hover: #fff;
+    --bg-content-color: #ffcc00;
+}
+
+.container-fluid {
+    max-width: 1400px;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    border: 0;
+    border-radius: 1rem;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: calc(1rem - 1px);
+    border-top-right-radius: calc(1rem - 1px);
+}
+
+
+.card h5 {
+    overflow: hidden;
+    height: 55px;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+    .card h5 a {
+        color: black;
+        text-decoration: none;
+    }
+
+.card-img-top {
+    width: 100%;
+    min-height: 250px;
+    max-height: 250px;
+    object-fit: contain;
+    padding: 30px;
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+/* Centered text */
+.label-top {
+    position: absolute;
+    background-color: var(--label-index);
+    color: #fff;
+    top: 8px;
+    right: 8px;
+    padding: 5px 10px 5px 10px;
+    font-size: .7rem;
+    font-weight: 600;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.top-right {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 900;
+    background: #8bc34a;
+    line-height: 90px;
+    text-align: center;
+    color: white;
+}
+
+    .top-right span {
+        display: inline-block;
+        vertical-align: middle;
+        /* line-height: normal; */
+        /* padding: 0 25px; */
+    }
+
+.aff-link {
+    /* text-decoration: overline; */
+    font-weight: 500;
+}
+
+.over-bg {
+    background: rgba(53, 53, 53, 0.85);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0.0px);
+    -webkit-backdrop-filter: blur(0.0px);
+    border-radius: 10px;
+}
+
+.bold-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 50px 5px 50px;
+}
+
+.box .btn {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1025px) {
+    .btn {
+        padding: 5px 40px 5px 40px;
+    }
+}
+
+@media (max-width: 250px) {
+    .btn {
+        padding: 5px 30px 5px 30px;
+    }
+}
+
+/* START BUTTON */
+.btn-warning {
+    background: var(--btnbg);
+    color: var(--btnfontcolor);
+    fill: #ffffff;
+    border: none;
+    text-decoration: none;
+    outline: 0;
+    /* box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25); */
+    border-radius: 100px;
+}
+
+    .btn-warning:hover {
+        background: var(--btnbghover);
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+    }
+
+    .btn-check:focus + .btn-warning, .btn-warning:focus {
+        background: var(--btnbghover);
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+    }
+
+    .btn-warning:active:focus {
+        box-shadow: 0 0 0 0.25rem var(--btnactivefs);
+    }
+
+    .btn-warning:active {
+        background: var(--btnbghover);
+        color: var(--btnfontcolorhover);
+        /* box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35); */
+    }
+
+/* END BUTTON */
+
+.bg-success {
+    font-size: 1rem;
+    background-color: var(--btnbg) !important;
+    color: var(--btnfontcolor) !important;
+}
+
+.bg-danger {
+    font-size: 1rem;
+}
+
+
+.price-hp {
+    font-size: 1rem;
+    font-weight: 600;
+    color: darkgray;
+}
+
+.amz-hp {
+    font-size: .7rem;
+    font-weight: 600;
+    color: darkgray;
+}
+
+.fa-question-circle:before {
+    /* content: "\\f059"; */
+    color: darkgray;
+}
+
+/*.fa-heart:before {
+    color: crimson;
+}*/
+
+.fa-chevron-circle-right:before {
+    color: darkgray;
+}
+
+
+/*detail*/
+.icon-hover:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+    color: #3b71ca !important;
+}
+
+    .icon-hover:hover i {
+        color: #3b71ca !important;
+    }
+/*detail*/
+
+/*signup*/
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+
+.gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+/*shoppingcart*/
+.icon-hover-primary:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+}
+
+    .icon-hover-primary:hover i {
+        color: #3b71ca !important;
+    }
+
+.icon-hover-danger:hover {
+    border-color: #dc4c64 !important;
+    background-color: white !important;
+}
+
+    .icon-hover-danger:hover i {
+        color: #dc4c64 !important;
+    }
+
+/*shoppingcart*/
+
+
+
+/*footer*/
+.top-footer {
+    background: #d1585f;
+}
+
+a.text-dark:hover {
+    color: #d70018 !important;
+    text-decoration: underline !important;
+}
+/*footer*/
+
+
+

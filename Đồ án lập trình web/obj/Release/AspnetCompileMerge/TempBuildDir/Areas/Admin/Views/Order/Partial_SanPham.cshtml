@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.OrderDetail>
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td></td>
+                    <td>@item.Product.ProductName</td>
+                    <td>@string.Format("{0:0,#}", item.Price)đ</td>
+                    <td>@item.Quantity</td>
+                    <td> @string.Format("{0:0,#}", item.Price * item.Quantity)đ</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

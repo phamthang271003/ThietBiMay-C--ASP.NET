@@ -1,0 +1,155 @@
+﻿@model List<Đồ_án_lập_trình_web.Models.Product>
+@{
+    //Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+
+@{
+    string iconClass = "";
+    if (ViewBag.IconClass == "fa-sort-desc")
+    {
+        iconClass = "fa-sort-asc";
+    }
+    else
+    {
+        iconClass = "fa-sort-desc";
+    }
+}
+<div class="cd__main">
+    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative">
+        <div class="row mb-3 ">
+            <div class="col-md-11">
+                @if (ViewBag.Brands != null)
+                {
+                    foreach (var item in ViewBag.Brands)
+                    {
+                        <a class="btn btn-light" href="~/Brands/ProductBrand/@item.BrandID">@item.BrandName</a>
+                    }
+                }
+            </div>
+            <div class="col-md-1">
+
+                <div class="dropup-center dropup">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sort
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="/Home?sortcolumn=ProductName&iconClass=@iconClass">
+                                Sắp xếp theo tên  @if (ViewBag.SortColumn == "ProductName")
+                                {
+                                    <i class="fa @ViewBag.IconClass"></i>
+                                }
+                            </a>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/Home?sortcolumn=ProductPrice&iconClass=@iconClass">
+                                Sắp xếp theo giá  @if (ViewBag.SortColumn == "ProductPrice")
+                                {
+                                    <i class="fa @ViewBag.IconClass"></i>
+                                }
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                @*<div class="dropdown ">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort
+                        </button>
+
+
+                    </div>*@
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            @{
+                foreach (var item in Model)
+                {
+                    <div class="col hp">
+                        <div class="card h-100 shadow-sm">
+                            <a href="~/Home/Detail/@item.ProductID">
+                                <img src="@item.ProductImage" class="card-img-top" alt="product.title" />
+                            </a>
+
+                            <div class="label-top shadow-sm">
+                                <a class="text-white" href="#">@item.Brand.BrandName</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="clearfix mb-3">
+                                    <span class="float-start badge rounded-pill bg-success">@string.Format("{0:0,#}", item.ProductPrice) đ</span>
+
+                                    <span class="float-end"><a href="#" class="small text-muted text-uppercase aff-link">reviews</a></span>
+                                </div>
+                                <h5 class="card-title">
+                                    <a target="_blank" href="#">@item.ProductName</a>
+                                </h5>
+
+                                <div class="d-grid gap-2 my-4">
+
+                                    <a href="#" id="quantity_value" class="btnAddToCart productid btn btn-warning bold-btn" data-id="@item.ProductID">Thêm vào giỏ</a>
+
+                                </div>
+                                <div class="clearfix mb-1">
+
+                                    <span class="float-start"><a href="#"><i class="fas fa-question-circle"></i></a></span>
+
+                                    <span class="float-end">
+                                        <i class="far fa-heart" style="cursor: pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+@*phan trang*@
+
+@{
+    int PrePage = ViewBag.Page - 1;
+    if (PrePage <= 0)
+    {
+        PrePage = 1;
+    }
+    int NextPage = ViewBag.Page + 1;
+    if (NextPage > ViewBag.NoOfPages)
+    {
+        NextPage = ViewBag.NoOfPages;
+    }
+}
+
+
+
+
+<ul class="pagination justify-content-center">
+    <li class="page-item ">
+        <a href="/Home?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@PrePage" class="page-link">PrePage</a>
+    </li>
+    @for (int i = 0; i < ViewBag.NoOfPages; i++)
+    {
+        if (i + 1 == ViewBag.Page)
+        {
+            <li class="page-item active">
+                <a href="/Home?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@(i+1)" class="page-link">@(i+1)</a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item">
+                <a href="/Home?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@(i+1)" class="page-link">@(i+1)</a>
+            </li>
+        }
+
+    }
+    <li class="page-item ">
+        <a href="/Home?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@NextPage" class="page-link">NextPage</a>
+    </li>
+</ul>
+
+
+
+
+

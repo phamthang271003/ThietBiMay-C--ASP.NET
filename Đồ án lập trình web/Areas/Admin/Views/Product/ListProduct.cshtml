@@ -1,0 +1,741 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.Product>
+
+@{
+    ViewBag.Title = "List";
+}
+@{
+    string iconClass = "";
+    if (ViewBag.IconClass == "fa-sort-desc")
+    {
+        iconClass = "fa-sort-asc";
+    }
+    else
+    {
+        iconClass = "fa-sort-desc";
+    }
+}
+
+
+<div class="container" style="margin-top:50px;">
+    <div class="row mb-3">
+        @*<div class="col-md-10">
+                <button class="btn btn-primary" type="button" id="btnGetProducts">Lấy danh sách sản phẩm API</button>
+            </div>*@
+        @*<div class="col-md-2">
+                <a class="btn btn-primary" style="float:right" href="~/Admin/Product/CreateProduct">Thêm sản phẩm</a>
+            </div>*@
+    </div>
+
+    <div class="row">
+        <div class="col-md-11" @*style="margin-bottom:50px;"*@>
+            <form class="d-flex flex-row align-items-center flex-wrap" action="/Admin/Product/ListProduct">
+
+                <input type="search" name="search" value="@ViewBag.Search" id="search" placeholder="search" class="form-control w-auto" />
+                <button type="submit" class="btn btn-primary">GO</button>
+            </form>
+
+        </div>
+        <div class="col-md-1">
+
+            <div class="dropdown mb-5">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                        <a class="dropdown-item active" href="~/Admin/Product/ListProduct?sortcolumn=ProductID&iconClass=@iconClass ">
+                            Sắp xếp theo ID  @if (ViewBag.SortColumn == "ProductID")
+                            {
+                                <i class="fa @ViewBag.IconClass"></i>
+                            }
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="~/Admin/Product/ListProduct?sortcolumn=ProductName&iconClass=@iconClass">
+                            Sắp xếp theo tên  @if (ViewBag.SortColumn == "ProductName")
+                            {
+                                <i class="fa @ViewBag.IconClass"></i>
+                            }
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="~/Admin/Product/ListProduct?sortcolumn=ProductPrice&iconClass=@iconClass">
+                            Sắp xếp theo giá  @if (ViewBag.SortColumn == "ProductPrice")
+                            {
+                                <i class="fa @ViewBag.IconClass"></i>
+                            }
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="~/Admin/Product/ListProduct?sortcolumn=DateOfPurchase&iconClass=@iconClass">
+                            Sắp xếp theo ngày mua  @if (ViewBag.SortColumn == "DateOfPurchase")
+                            {
+                                <i class="fa @ViewBag.IconClass"></i>
+                            }
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered ">
+                <tr>
+                    <th>
+                        Product ID
+                    </th>
+                    <th>
+                        Product Image
+                    </th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Date Of Purchase
+                    </th>
+                    <th>
+                        Availability Status
+                    </th>
+                    <th>
+                        Category
+                    </th>
+                    <th>
+                        Brand
+                    </th>
+                    <th>
+                        Active
+                    </th>
+                    <th>#</th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductID)
+                        </td>
+                        <td>
+                            <img src="@item.ProductImage" alt="Alternate Text" style="height:100px;width:100px" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+
+                            @string.Format("{0:0,#}", item.ProductPrice) đ
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateOfPurchase)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AvailabilityStatus)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brand.BrandName)
+                        </td>
+                        <td>
+                            @*@Html.DisplayFor(modelItem => item.Active)*@
+                            @item.Active
+                        </td>
+                        <td class="d-flex flex-row">
+                            @*@Html.ActionLink("Edit", "EditProduct", new { id = item.ProductID, controller = "Product" })*@
+                            <a class="btn me-1 btn-success" href="~/Admin/Product/EditProduct/@item.ProductID">Update</a>
+                            <a class="btn btn-danger" onclick="DeleteProduct(@item.ProductID)" href="#">Delete</a>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+            <tr>
+                <td colspan="10">
+                    @{
+                        int PrePage = ViewBag.Page - 1;
+                        if (PrePage <= 0)
+                        {
+                            PrePage = 1;
+                        }
+                        int NextPage = ViewBag.Page + 1;
+                        if (NextPage > ViewBag.NoOfPages)
+                        {
+                            NextPage = ViewBag.NoOfPages;
+                        }
+                    }
+
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item ">
+                            <a href="~/Admin/Product/ListProduct?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@PrePage" class="page-link">PrePage</a>
+                        </li>
+                        @for (int i = 0; i < ViewBag.NoOfPages; i++)
+                        {
+                            if (i + 1 == ViewBag.Page)
+                            {
+                                <li class="page-item active">
+                                    <a href="~/Admin/Product/ListProduct?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@(i+1)" class="page-link">@(i+1)</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="page-item">
+                                    <a href="~/Admin/Product/ListProduct?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@(i+1)" class="page-link">@(i+1)</a>
+                                </li>
+                            }
+
+                        }
+                        <li class="page-item ">
+                            <a href="~/Admin/Product/ListProduct?sortColumn=@ViewBag.SortColumn&iconClass=@ViewBag.IconClass&page=@NextPage" class="page-link">NextPage</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-10">
+            <button class="btn btn-primary" type="button" id="btnGetProducts">Lấy danh sách sản phẩm API</button>
+        </div>
+        @*<div class="col-md-2">
+                <a class="btn btn-primary" style="float:right" href="~/Admin/Product/CreateProduct">Thêm sản phẩm</a>
+            </div>*@
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered productTable">
+                <tr>
+                    <th>
+                        Product ID
+                    </th>
+                    <th>
+                        Product Image
+                    </th>
+                    <th>
+                        Product Name
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Date Of Purchase
+                    </th>
+                    <th>
+                        Availability Status
+                    </th>
+                    <th>
+                        Category
+                    </th>
+                    <th>
+                        Brand
+                    </th>
+                    <th>
+                        Active
+                    </th>
+                    <th>#</th>
+                </tr>
+            </table>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">View Product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td>Product ID</td>
+                                    <td><span id="ProductIdSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Product Image</td>
+                                    <td><span id="ProductImageSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Product Name</td>
+                                    <td><span id="ProductNameSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Price</td>
+                                    <td><span id="ProductPriceSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Date Of Purchase</td>
+                                    <td><span id="ProductDateSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Availability Status</td>
+                                    <td><span id="ProductAvailabilitySpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td> Category</td>
+                                    <td><span id="ProductCategorySpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand</td>
+                                    <td><span id="ProductBrandSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Active</td>
+                                    <td><span id="ProductActiveSpan"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">View Product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Bạn có chắc muốn xóa sản phẩm?</h5>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td>Product ID</td>
+                                    <td><span id="DeleteProductIdSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Product Image</td>
+                                    <td><span id="DeleteProductImageSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Product Name</td>
+                                    <td><span id="DeleteProductNameSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Price</td>
+                                    <td><span id="DeleteProductPriceSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Date Of Purchase</td>
+                                    <td><span id="DeleteProductDateSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Availability Status</td>
+                                    <td><span id="DeleteProductAvailabilitySpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td> Category</td>
+                                    <td><span id="DeleteProductCategorySpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand</td>
+                                    <td><span id="DeleteProductBrandSpan"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Active</td>
+                                    <td><span id="DeleteProductActiveSpan"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btnDelete">Delete</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="card-group">
+
+    <div class="card">
+        <div class="card-header">New Product</div>
+        <div class="card-body">
+            <form>
+                <div class="col-12">
+                    <label for="fileProductImage">Product Image</label>
+                    <input type="file" id="fileProductImage" style="margin-top:10px" />
+                </div>
+
+                @*<div class="col-12">
+                        <label for="txtProductImage">Product Image</label>
+                        <input type="text" class="form-control" placeholder="Product Image" id="txtProductImage" />
+                        <input type="file" name="FileAnh" style="margin-top:10px" />
+                    </div>*@
+
+                <div class="col-12">
+                    <label for="txtProductName">Product Name</label>
+                    <input type="text" class="form-control" placeholder="Product Name" id="txtProductName" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtPrice">Price</label>
+                    <input type="text" class="form-control" placeholder="Price" id="txtPrice" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtDateOfPurchase">Date Of Purchase</label>
+                    <input type="text" class="form-control" placeholder="Date Of Purchase" id="txtDateOfPurchase" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtAvailabilityStatus">Availability Status</label>
+                    <input type="text" class="form-control" placeholder="Availability Status" id="txtAvailabilityStatus" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtCategory">Category</label>
+                    <input type="text" class="form-control" placeholder="Category" id="txtCategory" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtBrand">Brand</label>
+                    <input type="text" class="form-control" placeholder="Brand" id="txtBrand" />
+                </div>
+
+
+                <div class="col-12">
+                    <label for="chkActive">Active</label>
+                    <input type="checkbox" id="chkActive" />
+                </div>
+
+            </form>
+        </div>
+        <div class="card-footer">
+            <button type="button" id="btnInsert" class="btn btn-info">Save</button>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header">Update Product</div>
+        <div class="card-body">
+            <form>
+
+                <div class="col-12">
+                    <label for="txtProductIĐUpate">Product ID</label>
+                    <input type="text" class="form-control" placeholder="Product ID" id="txtProductIdUpate" disabled="disabled" />
+                </div>
+
+                @*<div class="col-12">
+                        <label for="txtProductImage">Product Image</label>
+                        <input type="text" class="form-control" placeholder="Product Image" id="txtProductImageUpate" />
+                    </div>*@
+                <div class="col-12">
+                    <label for="fileProductImageUpdate">Product Image</label>
+                    <input type="file" id="fileProductImageUpdate" style="margin-top:10px" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtProductName">Product Name</label>
+                    <input type="text" class="form-control" placeholder="Product Name" id="txtProductNameUpate" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtPrice">Price</label>
+                    <input type="text" class="form-control" placeholder="Price" id="txtPriceUpate" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtDateOfPurchase">Date Of Purchase</label>
+                    <input type="text" class="form-control" placeholder="Date Of Purchase" id="txtDateOfPurchaseUpate" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtAvailabilityStatus">Availability Status</label>
+                    <input type="text" class="form-control" placeholder="Availability Status" id="txtAvailabilityStatusUpate" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtCategory">Category</label>
+                    <input type="text" class="form-control" placeholder="Category" id="txtCategoryUpate" />
+                </div>
+
+                <div class="col-12">
+                    <label for="txtBrand">Brand</label>
+                    <input type="text" class="form-control" placeholder="Brand" id="txtBrandUpate" />
+                </div>
+
+
+                <div class="col-12">
+                    <label for="chkActive">Active</label>
+                    <input type="checkbox" id="chkActiveUpate" />
+                </div>
+
+            </form>
+        </div>
+        <div class="card-footer">
+            <button type="button" id="btnUpate" class="btn btn-info">Save</button>
+        </div>
+    </div>
+
+</div>
+
+
+@section script
+{
+    <script>
+        var DeleteProduct = function (id) {
+            if (confirm("Bạn có chắc chắn muốn xóa hay không?") == true) {
+                location.href = 'DeleteProduct?id=' + id
+            }
+        }
+    </script>
+}
+
+<script>
+    $(document).ready(function () {
+        $('#btnGetProducts').click(() => {
+            $.ajax({
+                type: 'GET',
+                url: '/Api/Product',
+                success: (res) => {
+                    console.log('Success:', res);
+                    $('.productTable').empty();
+                    $('.productTable').append('<tr><th>Product ID</th><th>Product Image</th><th>Product Name</th><th>Price</th><th>Date Of Purchase</th><th>Availability Status</th><th>Category</th><th>Brand</th><th>Active</th><th>#</th></tr>');
+                    for (var i = 0; i < res.length; i++) {
+                        const productRow = res[i];
+                        var imageSource = productRow.ProductImage ? '' + productRow.ProductImage : '';
+
+                        const strHTML = '<tr><td>' + productRow.ProductID + '</td><td><img src="' + imageSource + '" alt="Alternate Text" style="width:100px;height:100px" /></td><td>' + productRow.ProductName + '</td><td>' + productRow.ProductPrice + '</td><td>' + productRow.DateOfPurchase + '</td><td>' + productRow.AvailabilityStatus + '</td><td>' + productRow.Category.CategoryName + '</td><td>' + productRow.Brand.BrandName + '</td><td>' + productRow.Active + '</td><td class="d-flex flex-row"><button type="button" class="btn btn-primary me-1 btnViewProduct bg-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-productid="' + productRow.ProductID + '">View</button><button type="button" class="btn btn-success bg-success me-1 btnUpdateProduct" data-productid="' + productRow.ProductID + '">Update</button><button type="button" class="btn btn-danger bg-danger me-1 btnDeleteProduct" data-bs-toggle="modal" data-bs-target="#deleteModal" data-productid="' + productRow.ProductID + '">Delete</button></td></tr>';
+                        $('.productTable').append(strHTML);
+                    }
+                },
+                error: (xhr, status, error) => {
+                    console.error('AJAX Error:', status, error);
+                    console.log(xhr.responseText);
+                }
+            });
+        });
+    });
+    $(document).on('click', '.btnViewProduct', (event) => {
+        const prid = $(event.target).attr('data-productid');
+        $.ajax({
+            type: 'GET',
+            url: `/api/Product?id=${prid}`,
+            success: (res) => {
+                $('#ProductIdSpan').html(res.ProductID);
+                $('#ProductImageSpan').html(`<img src="${res.ProductImage}" width="100px" />`);
+                $('#ProductNameSpan').html(res.ProductName);
+                $('#ProductPriceSpan').html(res.ProductPrice);
+                $('#ProductDateSpan').html(res.DateOfPurchase);
+                $('#ProductAvailabilitySpan').html(res.AvailabilityStatus);
+                $('#ProductCategorySpan').html(res.Category.CategoryName);
+                $('#ProductBrandSpan').html(res.Brand.BrandName);
+                $('#ProductActiveSpan').html(res.Active);
+            },
+            error: (xhr, status, error) => {
+                console.error('AJAX Error:', status, error);
+                console.log(xhr.responseText);
+            }
+        });
+    });
+
+    $('#btnInsert').click(() => {
+        const formData = new FormData();
+        const fileProductImage = $('#fileProductImage')[0].files[0];
+
+        formData.append('fileProductImage', fileProductImage);
+        formData.append('ProductName', $('#txtProductName').val());
+        formData.append('ProductPrice', $('#txtPrice').val());
+        formData.append('DateOfPurchase', $('#txtDateOfPurchase').val());
+        formData.append('AvailabilityStatus', $('#txtAvailabilityStatus').val());
+        formData.append('CategoryID', $('#txtCategory').val());
+        formData.append('BrandID', $('#txtBrand').val());
+        formData.append('Active', $('#chkActive').prop('checked'));
+
+        $.ajax({
+            type: 'POST',
+            url: '/api/Product',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: () => {
+                $('#btnGetProducts').trigger('click');
+            },
+            error: (xhr, status, error) => {
+                console.error('AJAX Error:', status, error);
+                console.log(xhr.responseText);
+            }
+        });
+    });
+
+
+    //$('#btnInsert').click(() => {
+    //    const ProductImage = $('#txtProductImage').val();
+    //    const ProductName = $('#txtProductName').val();
+    //    const Price = $('#txtPrice').val();
+    //    const DateOfPurchase = $('#txtDateOfPurchase').val();
+    //    const AvailabilityStatus = $('#txtAvailabilityStatus').val();
+    //    const Category = $('#txtCategory').val();
+    //    const Brand = $('#txtBrand').val();
+    //    const Active = $('#chkActive').prop('checked');
+
+    //    $.ajax({
+    //        type: 'POST',
+    //        url: '/api/Product',
+    //        data: {
+    //            'ProductName': ProductName,
+    //            'ProductImage': ProductImage,
+    //            'ProductPrice': Price,
+    //            'DateOfPurchase': DateOfPurchase,
+    //            'AvailabilityStatus': AvailabilityStatus,
+    //            'CategoryID': Category,
+    //            'BrandID': Brand,
+    //            'Active': Active
+    //        },
+    //        success: () => {
+    //            $('#btnGetProducts').trigger('click');
+    //        },
+    //        error: (xhr, status, error) => {
+    //            console.error('AJAX Error:', status, error);
+    //            console.log(xhr.responseText);
+    //        }
+    //    });
+    //});
+
+
+
+    $(document).on('click', '.btnUpdateProduct', (event) => {
+        const prid = $(event.target).attr('data-productid');
+        $.ajax({
+            type: 'GET',
+            url: `/api/Product?id=${prid}`,
+            success: (res) => {
+                $('#txtProductIdUpate').val(res.ProductID);
+                $('#txtProductImageUpate').text(res.ProductImage);
+                $('#txtProductNameUpate').val(res.ProductName);
+                $('#txtPriceUpate').val(res.ProductPrice);
+                $('#txtDateOfPurchaseUpate').val(res.DateOfPurchase);
+                $('#txtAvailabilityStatusUpate').val(res.AvailabilityStatus);
+                $('#txtCategoryUpate').val(res.CategoryID);
+                $('#txtBrandUpate').val(res.BrandID);
+                $('#chkActiveUpate').val(res.Active);
+            },
+            error: (xhr, status, error) => {
+                console.error('AJAX Error:', status, error);
+                console.log(xhr.responseText);
+            }
+        });
+    });
+
+    $('#btnUpate').click(() => {
+        const formData = new FormData();
+        const fileProductImage = $('#fileProductImageUpdate')[0].files[0];
+
+        formData.append('ProductID', $('#txtProductIdUpate').val());
+        formData.append('fileProductImage', fileProductImage);
+        formData.append('ProductName', $('#txtProductNameUpate').val());
+        formData.append('ProductPrice', $('#txtPriceUpate').val());
+        formData.append('DateOfPurchase', $('#txtDateOfPurchaseUpate').val());
+        formData.append('AvailabilityStatus', $('#txtAvailabilityStatusUpate').val());
+        formData.append('CategoryID', $('#txtCategoryUpate').val());
+        formData.append('BrandID', $('#txtBrandUpate').val());
+        formData.append('Active', $('#chkActiveUpate').prop('checked'));
+
+        $.ajax({
+            type: 'PUT',
+            url: '/api/Product',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: () => {
+                $('#btnGetProducts').trigger('click');
+            },
+            error: (xhr, status, error) => {
+                console.error('AJAX Error:', status, error);
+                console.log(xhr.responseText);
+            }
+        });
+    });
+
+
+    //$('#btnUpate').click(() => {
+    //    const ProductID = $('#txtProductIdUpate').val();
+    //    const ProductImage = $('#txtProductImageUpate').val();
+    //    const ProductName = $('#txtProductNameUpate').val();
+    //    const Price = $('#txtPriceUpate').val();
+    //    const DateOfPurchase = $('#txtDateOfPurchaseUpate').val();
+    //    const AvailabilityStatus = $('#txtAvailabilityStatusUpate').val();
+    //    const Category = $('#txtCategoryUpate').val();
+    //    const Brand = $('#txtBrandUpate').val();
+    //    const Active = $('#chkActiveUpate').prop('checked');
+
+    //    $.ajax({
+    //        type: 'PUT',
+    //        url: '/api/Product',
+    //        data: {
+    //            'ProductID': ProductID,
+    //            'ProductName': ProductName,
+    //            'ProductImage': ProductImage,
+    //            'ProductPrice': Price,
+    //            'DateOfPurchase': DateOfPurchase,
+    //            'AvailabilityStatus': AvailabilityStatus,
+    //            'CategoryID': Category,
+    //            'BrandID': Brand,
+    //            'Active': Active
+    //        },
+    //        success: () => {
+    //            $('#btnGetProducts').trigger('click');
+    //        },
+    //        error: (xhr, status, error) => {
+    //            console.error('AJAX Error:', status, error);
+    //            console.log(xhr.responseText);
+    //        }
+    //    });
+    //});
+
+    $(document).on('click', '.btnDeleteProduct', (event) => {
+        const prid = $(event.target).attr('data-productid');
+        $.ajax({
+            type: 'GET',
+            url: `/api/Product?id=${prid}`,
+            success: (res) => {
+                $('#DeleteProductIdSpan').html(res.ProductID);
+                $('#DeleteProductImageSpan').html(`<img src="${res.ProductImage}" width="100px" />`);
+                $('#DeleteProductNameSpan').html(res.ProductName);
+                $('#DeleteProductPriceSpan').html(res.ProductPrice);
+                $('#DeleteProductDateSpan').html(res.DateOfPurchase);
+                $('#DeleteProductAvailabilitySpan').html(res.AvailabilityStatus);
+                $('#DeleteProductCategorySpan').html(res.Category.CategoryName);
+                $('#DeleteProductBrandSpan').html(res.Brand.BrandName);
+                $('#DeleteProductActiveSpan').html(res.Active);
+            },
+            error: (xhr, status, error) => {
+                console.error('AJAX Error:', status, error);
+                console.log(xhr.responseText);
+            }
+        });
+    });
+
+    $('#btnDelete').click(() => {
+        const ProductID = $('#DeleteProductIdSpan').html();
+
+        $.ajax({
+            type: 'DELETE',
+            url: `/api/Product?id=${ProductID}`,
+            success: () => {
+                $('#btnGetProducts').trigger('click');
+            },
+            error: (xhr, status, error) => {
+                console.error('AJAX Error:', status, error);
+                console.log(xhr.responseText);
+            }
+        });
+    });
+
+</script>
+
+

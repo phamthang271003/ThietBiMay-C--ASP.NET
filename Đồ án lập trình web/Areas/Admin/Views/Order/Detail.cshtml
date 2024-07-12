@@ -1,0 +1,67 @@
+﻿@model Đồ_án_lập_trình_web.Models.Order
+
+@{
+    ViewBag.Title = "Detail";
+}
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <label class="mb-0">Mã đơn hàng</label>
+        <div class="form-outline">
+            <p class="form-control">@Model.Code</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label class="mb-0">Họ tên khách hàng</label>
+        <div class="form-outline">
+            <p class="form-control">@Model.CustomerName</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label class="mb-0">Tổng tiền</label>
+        <div class="form-outline">
+            <p class="form-control">@string.Format("{0:0,#}",Model.ToTalAmount)đ</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label class="mb-0">Số điện thoại</label>
+        <div class="form-outline">
+            <p class="form-control">@Model.Phone</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label class="mb-0">Ngày tạo</label>
+        <div class="form-outline">
+            <p class="form-control">@Model.CreatedDate</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label class="mb-0">Email</label>
+        <div class="form-outline">
+            <p class="form-control">@Model.Email</p>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+        <label class="mb-0">Trạng thái</label>
+        <div class="form-outline">
+            <p class="form-control">@(Model.TypePayment == 1 ? "Chưa thanh toán" : "Đã thanhn toán")</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h2>Danh sách sản phẩm</h2>
+    </div>
+    <div class="col-12">
+  @Html.Action("Partial_SanPham", "Order",new {id = Model.Id})
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

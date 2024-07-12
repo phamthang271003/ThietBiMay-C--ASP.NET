@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.Product>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>List</h2>
+
+<button type="button" id="btnGetProducts">Get Product</button>
+<table class="table productTable">
+    <tr>
+        <th>
+            Product ID
+        </th>
+        <th>
+            Product Image
+        </th>
+        <th>
+            Product Name
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Date Of Purchase
+        </th>
+        <th>
+            Availability Status
+        </th>
+        <th>
+            Category
+        </th>
+        <th>
+            Brand
+        </th>
+        <th>
+            Active
+        </th>
+        <th>#</th>
+    </tr>
+</table>
+@section script
+{
+    <script>
+        var DeleteBrand = function (id) {
+            if (confirm("Bạn có chắc chắn muốn xóa hay không?") == true) {
+                location.href = 'DeleteBrand?id=' + id
+            }
+        }
+    </script>
+}
+
+<script>
+
+    $('#btnGetProducts').click(() => {
+        $.ajax({
+            type: 'GET',
+            url: '/api/Product',
+            success: (res) => {
+                for (var i = 0; i < res.length; i++) {
+                    const ProductRow = res[i];
+                    const strHTML = '<tr><td>' + ProductRow.ProductID + '</td><td>' + ProductRow.ProductImage + '</td><td>' + ProductRow.ProductName + '</td><td>' + ProductRow.ProductPrice + '</td><td>' + ProductRow.DateOfPurchase + '</td><td>' + ProductRow.AvailabilityStatus + '</td><td>' + ProductRow.CategoryID + '</td><td>' + ProductRow.BrandID + '</td><td>' + ProductRow.Active + '</td></tr>'
+                    $('.productTable').append(strHTML);
+                }
+            },
+            error: (err) => { console.log(err) }
+        });
+    });
+</script>

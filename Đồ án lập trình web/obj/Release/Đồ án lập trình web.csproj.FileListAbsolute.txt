@@ -1,0 +1,266 @@
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Đồ án lập trình web.dll.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Đồ án lập trình web.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Đồ án lập trình web.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\csc.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\csc.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\csc.rsp
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\csi.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\csi.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\csi.rsp
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.AppContext.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Collections.Immutable.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Console.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Globalization.Calendars.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.IO.Compression.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.IO.FileSystem.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Net.Http.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Net.Sockets.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.ValueTuple.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Xml.XPath.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\vbc.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\vbc.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\vbc.rsp
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\VBCSCompiler.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\roslyn\VBCSCompiler.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Antlr3.Runtime.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\CKFinder.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\EntityFramework.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\EntityFramework.SqlServer.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Security.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Web.Infrastructure.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Newtonsoft.Json.Bson.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Newtonsoft.Json.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Owin.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Buffers.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Memory.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Net.Http.Formatting.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Numerics.Vectors.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Threading.Tasks.Extensions.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Helpers.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Http.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Http.WebHost.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Mvc.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Optimization.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Razor.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.WebPages.Deployment.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.WebPages.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.WebPages.Razor.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\WebGrease.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\CKFinder.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\EntityFramework.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\EntityFramework.SqlServer.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Security.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Newtonsoft.Json.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Newtonsoft.Json.Bson.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Newtonsoft.Json.Bson.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Buffers.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Memory.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Net.Http.Formatting.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Numerics.Vectors.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Threading.Tasks.Extensions.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Http.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Http.WebHost.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Helpers.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Mvc.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Optimization.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.Razor.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.WebPages.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.WebPages.Deployment.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\System.Web.WebPages.Razor.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Antlr3.Runtime.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.AssemblyReference.cache
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\obj\Release\Đồ_án_lập_trình_web.IdentityMigration.init.resources
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.GenerateResource.cache
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.CoreCompileInputs.cache
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.CopyComplete
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\obj\Release\Đồ án lập trình web.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\obj\Release\Đồ án lập trình web.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\grpc_csharp_ext.x86.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\grpc_csharp_ext.x64.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\libgrpc_csharp_ext.x64.so
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\libgrpc_csharp_ext.x64.dylib
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Grpc.Core.Api.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Grpc.Core.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Grpc.Core.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Grpc.Core.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Grpc.Core.Api.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\bin\Grpc.Core.Api.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\grpc_csharp_ext.x86.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\grpc_csharp_ext.x64.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\libgrpc_csharp_ext.x64.so
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\libgrpc_csharp_ext.x64.dylib
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Đồ án lập trình web.dll.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Đồ án lập trình web.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Đồ án lập trình web.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\csc.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\csc.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\csc.rsp
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\csi.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\csi.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\csi.rsp
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.AppContext.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Collections.Immutable.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Console.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Globalization.Calendars.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.IO.Compression.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.IO.FileSystem.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Net.Http.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Net.Sockets.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.ValueTuple.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Xml.XPath.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\vbc.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\vbc.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\vbc.rsp
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\VBCSCompiler.exe
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\roslyn\VBCSCompiler.exe.config
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Antlr3.Runtime.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\CKFinder.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\EntityFramework.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\EntityFramework.SqlServer.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Grpc.Core.Api.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Grpc.Core.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Security.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Web.Infrastructure.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Newtonsoft.Json.Bson.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Newtonsoft.Json.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Owin.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Buffers.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Memory.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Net.Http.Formatting.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Numerics.Vectors.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Threading.Tasks.Extensions.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Helpers.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Http.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Http.WebHost.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Mvc.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Optimization.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Razor.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.WebPages.Deployment.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.WebPages.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.WebPages.Razor.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\WebGrease.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\CKFinder.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\EntityFramework.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\EntityFramework.SqlServer.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Grpc.Core.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Grpc.Core.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Grpc.Core.Api.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Grpc.Core.Api.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Security.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Newtonsoft.Json.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Newtonsoft.Json.Bson.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Newtonsoft.Json.Bson.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Buffers.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Memory.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Net.Http.Formatting.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Numerics.Vectors.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Threading.Tasks.Extensions.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Http.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Http.WebHost.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Helpers.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Mvc.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Optimization.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.Razor.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.WebPages.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.WebPages.Deployment.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\System.Web.WebPages.Razor.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Antlr3.Runtime.pdb
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.AssemblyReference.cache
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Đồ_án_lập_trình_web.IdentityMigration.init.resources
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.GenerateResource.cache
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.CoreCompileInputs.cache
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Đồ án lập trình web.csproj.CopyComplete
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Đồ án lập trình web.dll
+D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Đồ án lập trình web.pdb

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.Brand>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<a class="btn btn-primary mb-3" href="~/Admin/Brands/CreateBrand">Thêm thương hiệu</a>
+@*<button type="button" id="btnGetBrands">Get Brands</button>*@
+<table class="table brandTable">
+    <tr>
+        <th>
+            Brand Id
+
+        </th>
+        <th>
+            Brand Name
+        </th>
+        <th>#</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrandID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrandName)
+            </td>
+
+            <td>
+                <a class="btn btn-success"s href="~/Admin/Brands/EditBrand/@item.BrandID">Edit</a>
+                <a class="btn btn-danger" onclick="DeleteBrand(@item.BrandID)" href="#">Delete</a>
+            </td>
+
+
+        </tr>
+    }
+
+</table>
+@section script
+{
+    <script>
+        var DeleteBrand = function (id) {
+            if (confirm("Bạn có chắc chắn muốn xóa hay không?") == true) {
+                location.href = 'DeleteBrand?id=' + id
+            }
+        }
+    </script>
+}
+
+@*<script>
+
+    $('#btnGetBrands').click(() => {
+        $.ajax({
+            type: 'GET',
+            url: '/api/brands',
+            success: (res) => {
+                for (var i = 0; i < res.length; i++) {
+                    const BrandRow = res[i];
+                    const strHTML = '<tr><td>' + BrandRow.BrandID + '</td><td>' + BrandRow.BrandName + '</td></tr>'
+                    $('.brandTable').append(strHTML);
+                }
+            },
+            error: (err) => { console.log(err) }
+        });
+    });
+</script>*@

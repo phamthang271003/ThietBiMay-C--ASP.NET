@@ -1,0 +1,123 @@
+Message: Error - We want an error here
+Message: Error - We want an error here
+Message: The action 'Detail' is accessible only by a child request.
+Message: The action 'Index' is accessible only by a child request.
+Message: The action 'Index' is accessible only by a child request.
+Message: The action 'Detail' is accessible only by a child request.
+Message: The action 'Detail' is accessible only by a child request.
+Message: The action 'Detail' is accessible only by a child request.
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Areas\Admin\Views\Product\ListProduct.cshtml(279): error CS1012: Too many characters in character literal
+Message: "<" is not valid at the start of a code block.  Only identifiers, keywords, comments, "(" and "{" are valid.
+
+Message: "<" is not valid at the start of a code block.  Only identifiers, keywords, comments, "(" and "{" are valid.
+
+Message: "<" is not valid at the start of a code block.  Only identifiers, keywords, comments, "(" and "{" are valid.
+
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: The model item passed into the dictionary is of type 'System.Data.Entity.DynamicProxies.AppUser_D86F8DF8E056EDF44544387E1C9E3638B27EEE5B78E5D30C0050A0C00BCFE8CE', but this dictionary requires a model item of type 'Đồ_án_lập_trình_web.ViewModel.RegisterVM'.
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Areas\Admin\Views\Users\EditUser.cshtml(15): error CS1061: 'AppUser' does not contain a definition for 'Username' and no accessible extension method 'Username' accepting a first argument of type 'AppUser' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Areas\Admin\Views\Users\EditUser.cshtml(15): error CS1061: 'AppUser' does not contain a definition for 'Username' and no accessible extension method 'Username' accepting a first argument of type 'AppUser' could be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\Đồ án lập trình web\Đồ án lập trình web\Views\Shared\LayoutUser.cshtml(161): error CS0246: The type or namespace name 'Category' could not be found (are you missing a using directive or an assembly reference?)
+Message: The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Detail(Int32)' in 'Đồ_án_lập_trình_web.Controllers.HomeController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Message: Unexpected "foreach" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "foreach" with "@".
+
+Message: Unexpected "foreach" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "foreach" with "@".
+
+Message: A potentially dangerous Request.Form value was detected from the client (Detail="<p>H&ocirc;m nay, TA...").
+Message: A potentially dangerous Request.Form value was detected from the client (Detail="<p>H&ocirc;m nay, TA...").
+Message: D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\Areas\Admin\Views\News\List.cshtml(94): error CS1061: 'New' does not contain a definition for 'CreatedDate' and no accessible extension method 'CreatedDate' accepting a first argument of type 'New' could be found (are you missing a using directive or an assembly reference?)
+Message: The following sections have been defined but have not been rendered for the layout page "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml": "scripts".
+Message: The view 'Edit' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/Posts/Edit.aspx
+~/Areas/Admin/Views/Posts/Edit.ascx
+~/Areas/Admin/Views/Shared/Edit.aspx
+~/Areas/Admin/Views/Shared/Edit.ascx
+~/Views/Posts/Edit.aspx
+~/Views/Posts/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Areas/Admin/Views/Posts/Edit.cshtml
+~/Areas/Admin/Views/Posts/Edit.vbhtml
+~/Areas/Admin/Views/Shared/Edit.cshtml
+~/Areas/Admin/Views/Shared/Edit.vbhtml
+~/Views/Posts/Edit.cshtml
+~/Views/Posts/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+Message: The view 'Edit' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/Posts/Edit.aspx
+~/Areas/Admin/Views/Posts/Edit.ascx
+~/Areas/Admin/Views/Shared/Edit.aspx
+~/Areas/Admin/Views/Shared/Edit.ascx
+~/Views/Posts/Edit.aspx
+~/Views/Posts/Edit.ascx
+~/Views/Shared/Edit.aspx
+~/Views/Shared/Edit.ascx
+~/Areas/Admin/Views/Posts/Edit.cshtml
+~/Areas/Admin/Views/Posts/Edit.vbhtml
+~/Areas/Admin/Views/Shared/Edit.cshtml
+~/Areas/Admin/Views/Shared/Edit.vbhtml
+~/Views/Posts/Edit.cshtml
+~/Views/Posts/Edit.vbhtml
+~/Views/Shared/Edit.cshtml
+~/Views/Shared/Edit.vbhtml
+Message: The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Detail(Int32)' in 'Đồ_án_lập_trình_web.Controllers.NewsController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Message: The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Detail(Int32)' in 'Đồ_án_lập_trình_web.Controllers.NewsController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+Message: The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult Detail(Int32)' in 'Đồ_án_lập_trình_web.Controllers.NewsController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters

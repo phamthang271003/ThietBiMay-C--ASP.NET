@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Thanh toán";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+
+<section class="bg-light py-5">
+    <div class="container">
+        @if (ViewBag.CheckCart != null)
+        {
+            <div class="row">
+                <div id="show_success"></div>
+                <div style="display:none" id="show_success"></div>
+                <div class="col-xl-8 col-lg-8 mb-4">
+                    <div class="card mb-4 border shadow-0">
+                        <div class="p-4 d-flex justify-content-between">
+                            <div class="">
+                                <h5>Have an account?</h5>
+                                <p class="mb-0 text-wrap ">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center flex-column flex-md-row">
+                                <a href="#" class="btn btn-outline-primary me-0 me-md-2 mb-2 mb-md-0 w-100">Register</a>
+                                <a href="#" class="btn btn-primary shadow-0 text-nowrap w-100">Sign in</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checkout -->
+
+                    <div class="card shadow-0 border">
+                        <div class="p-4">
+                         @Html.Action("Partial_CheckOut", "ShoppingCart")
+                        </div>
+                    </div>
+                    <!-- Checkout -->
+                         
+                </div>
+
+                <div class="col-xl-4 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                    <div class="ms-lg-4 mt-4 mt-lg-0" style="max-width: 320px;">
+                        @Html.Action("Partial_Item_Payment", "ShoppingCart")
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div> Bạn chưa có sản phẩm nào trong giỏ hàng.Vui lòng quay lại trang <a href="~/Home/Index"> sản phẩm </a> để mua hàng.</div>
+        }
+    </div>
+</section>
+
+<script>
+    function OnSuccessCO(rs) {
+        if (!   rs.Success) {
+            $('#show_success').html("Bạn mua hàng thất bại! Xin vui lòng thử lại");
+        }
+    }
+</script>
+

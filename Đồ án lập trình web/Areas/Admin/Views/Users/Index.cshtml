@@ -1,0 +1,64 @@
+﻿@model List<Đồ_án_lập_trình_web.Identity.AppUser>
+@{
+    ViewBag.Title = "Index";
+}
+<a class="btn btn-primary mb-3" href="/Admin/Users/Register">Thêm tài khoản</a>
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Username
+
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Mobile
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Date Of Birth
+        </th>
+        <th>#</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birthday)
+            </td>
+            <td>
+                <a class="btn btn-success" s href="~/Admin/Users/EditUser/@item.Id">Edit</a>
+                <a class="btn btn-danger" href="~/admin/Users/DeleteUser/@item.Id">Delete</a>
+                @*<a class="btn btn-danger" onclick="DeleteBrand(@item.BrandID)" href="#">Delete</a>*@
+            </td>
+        </tr>
+    }
+
+</table>
+
+@*@section script
+{
+    <script>
+        var DeleteUser = function (id) {
+            if (confirm("Bạn có chắc chắn muốn xóa hay không?") == true) {
+                location.href = 'DeleteUser?id=' + id
+            }
+        }
+    </script>
+}*@

@@ -1,0 +1,362 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/logins/login-9/assets/css/login-9.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="~/Scripts/jquery-3.7.1.js"></script>
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+
+
+    <script src="/assets/vendors/jquery.min.js"></script>
+    <script src="/assets/owlcarousel/owl.carousel.js"></script>
+
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <section class="myheader" style="background-color:#e10000 ;">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-2 col-xl-3 col-md-3 col-4  py-3 ">
+                        <a href="~/Home">
+                            <img src="~/image/logo.png" class="img-fluid w-50 h-100" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 col-xl-4 col-md-6 col-4">
+
+                        <form action="/Home">
+                            <div class="input-group ">
+                                <input type="search" name="search" class="form-control" value="@ViewBag.Search" placeholder="Từ khóa tìm kiếm"
+                                       aria-label="Recipient's username" aria-describedby="basic-addon2 ">
+                                <span class="input-group-text" id="basic-addon2">
+
+                                    <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-3 col-xl-3   d-md-none d-sm-none d-none d-lg-block">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row ">
+                                    <div class="col-md-3">
+                                        <div class="fs-3 icon-header icon-phone ">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 contact-phone">
+                                        <p>Tư vấn hỗ trợ </p>
+                                        <a href="#"> <strong>19006868</strong></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col">
+                                <div class="row ">
+                                    <div class="col-3 icon-header icon-account">
+                                        <div class="fs-3"> <i class="fa-solid fa-user"></i></div>
+
+                                    </div>
+                                    <div class="col-9 contact-phone account-header">
+
+
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <p>
+                                                Xin chào @User.Identity.Name
+                                            </p>
+
+                                        }
+
+                                        @RenderSection("script", false)
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <a href="~/Account/Logout">Đăng xuất</a>
+                                        }
+                                        else
+                                        {
+                                            <a href="~/Account/Login">Đăng nhập</a>
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-3 col-4 col-account order-2 order-md-3">
+                        <div class="row ">
+                            <div class="col-4">
+                                <a href="#" class="position-relative">
+                                    <span class="fs-2 icon-header icon-heart"><i class="fa-regular fa-heart"></i></span>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                        0+
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="@Url.Action("Index","ShoppingCart")" class="position-relative">
+                                    <span class="fs-2 icon-header icon-bag">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </span>
+                                    <span id="CartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                        0+
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="position-relative">
+                                    <span class="fs-2 icon-header icon-compare">
+                                        <i class="fa-solid fa-code-compare"></i>
+                                    </span>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                        0+
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle text-black" href="~/Home">
+                                Danh mục sản phẩm
+                            </a>
+
+                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                @if (ViewBag.Categories != null)
+                                {
+                                    foreach (var item in ViewBag.Categories)
+                                    {
+                                        <li>
+                                            <a class="dropdown-item  py-0" href="~/Categories/ProductCategory/@item.CategoryID">@item.CategoryName</a>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                    }
+                                }
+
+
+                            </ul>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="~/Home">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu  ">
+                                @if (ViewBag.Categories != null)
+                                {
+                                    foreach (var item in ViewBag.Categories)
+                                    {
+                                        <li>
+                                            <a class="dropdown-item py-0" href="~/Categories/ProductCategory/@item.CategoryID">@item.CategoryName</a>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                    }
+
+                                }
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Home" class="nav-link m-0" aria-disabled="true">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/Home" class="nav-link m-0" aria-disabled="true">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+        <section class="mymaincontent my-3 ">
+            @RenderSection("Carousel", required: false)
+            @RenderSection("CategoryList", required: false)
+            @RenderBody()
+        </section>
+
+    </main>
+
+
+
+    <footer class="card-footer mt-5 pt-5 border-top">
+        <section class="myfooter">
+            <div class="top-footer">
+                <div class="container">
+                    <div class="row  ">
+                        <div class="col-md-3 my-4">
+                            <a href="https://www.facebook.com/" class="social-button" title="Facebook" target="_blank"
+                               rel="nofollow">
+                                <img src="//bizweb.dktcdn.net/100/469/456/themes/882759/assets/icon-facebook.png?1667268451293"
+                                     alt="Facebook">
+                            </a>
+                            <a href="#" class="social-button" title="Mess" target="_blank" rel="nofollow">
+                                <img src="//bizweb.dktcdn.net/100/469/456/themes/882759/assets/icon-mess.png?1667268451293"
+                                     alt="Mess">
+                            </a>
+                            <a href="https://www.youtube.com/" class="social-button" title="Youtube" target="_blank"
+                               rel="nofollow">
+                                <img src="//bizweb.dktcdn.net/100/469/456/themes/882759/assets/icon-youtube.png?1667268451293"
+                                     alt="Youtube">
+                            </a>
+                            <a href="https://www.instagram.com/" class="social-button" title="Instagram" target="_blank"
+                               rel="nofollow">
+                                <img src="//bizweb.dktcdn.net/100/469/456/themes/882759/assets/icon-instagram.png?1667268451293"
+                                     alt="instagram">
+                            </a>
+                        </div>
+                        <div class="col-md-5 my-4">
+                            <h4 class="title-menu">
+                                Nhận thông tin khuyến mãi từ chúng tôi
+                            </h4>
+                        </div>
+                        <div class="col-md-4 my-4">
+                            <div class="input-group ">
+                                <input type="text" class="form-control" placeholder="Nhập địa chỉ email của bạn"
+                                       aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text bg-warning" id="basic-addon2">
+                                    <button class="btn btn-default" type="submit" aria-label="Đăng ký nhận tin"
+                                            name="subscribe">
+                                        Đăng ký
+                                    </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="center-footer">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="/image/logoft.png" class="img-fluid" alt="logoft">
+                            <p class="text-center">
+                                Thiết Bị Máy Là Hệ Thống Chuỗi Cửa Hàng Thiết Bị Công Nông Nghiệp
+                                Hàng
+                                Đầu Việt Nam Thuộc Sở Hữu Của CÔNG TY CỔ PHẦN OSHIMA.
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Chính sách</h4>
+                            <ul class="list-menu " style="display: block;">
+                                <li><a href="" title="Trang chủ" class="text-dark">Chính sách bảo mật</a></li>
+                                <hr />
+                                <li><a href="#" title="Giới thiệu" class="text-dark">Chính sách dịch vụ</a></li>
+                                <hr>
+                                <li><a href="#" title="Sản phẩm" class="text-dark">Chính sách thanh toán</a></li>
+                                <hr>
+                                <li><a href="#" title="Tin tức" class="text-dark">Chính sách vận chuyển</a></li>
+                                <hr>
+                                <li><a href="#" title="Liên hệ" class="text-dark">Chính sách bảo hành</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>Liên hệ</h4>
+                            <ul class="list-menu " style="display: block;">
+                                <li><a href="#" title="Trang chủ" class="text-dark">Về chúng tôi</a></li>
+                                <hr>
+                                <li><a href="#" title="Giới thiệu" class="text-dark">Tin tức</a></li>
+                                <hr />
+                                <li><a href="#" title="Liên hệ" class="text-dark">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <h4>Phương thức thanh toán</h4>
+                            <div class="payment">
+                                <img src="//bizweb.dktcdn.net/100/469/456/themes/882759/assets/payment_method.png?1667268451293"
+                                     data-src="//bizweb.dktcdn.net/100/469/456/themes/882759/assets/payment_method.png?1667268451293"
+                                     class="img-fluid lazyload loaded" alt="Phương thức thanh toán" data-was-processed="true">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-footer" style="background-color: #e10000;">
+                <div class="container ">
+                    <div class="row text-center pt-5 ">
+                        <p>© 2023 Copyright Thiết bị máy | Copyright thietbimay.net</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 2,
+
+                    },
+                    600: {
+                        items: 4,
+
+                    },
+                    1000: {
+                        items: 8,
+                        loop: false,
+                        margin: 20
+                    }
+                }
+            })
+        })
+    </script>
+
+
+    <script src="~/Scripts/jsShopping3.js"></script>
+</body>
+</html>
+
+

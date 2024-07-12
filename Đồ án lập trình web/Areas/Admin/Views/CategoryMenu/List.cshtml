@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.CategoryMenu>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Quản lý danh mục</h2>
+
+<a class="btn btn-primary mb-3" href="/Admin/CategoryMenu/Create">Thêm danh mục</a>
+<table class="table table-bordered ">
+    <tr>
+        <th>
+            STT
+        </th>
+        <th>
+            Tên danh mục
+        </th>
+        <th>
+            Thứ tự
+        </th>
+        <th>
+
+        </th>
+    </tr>
+
+    @if (Model != null && Model.Any())
+    {
+        var i = 1;
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@i </td>
+                <td>@item.Title </td>
+                <td>@item.Position </td>
+                <td>
+                    <a href="/Admin/CategoryMenu/Edit/@item.Id" class="btn btn-primary">Sửa</a>
+                    <a class="btn btn-danger" onclick="DeleteCategory(@item.Id)" href="#">Xóa</a>
+                </td>
+            </tr>
+            i++;
+        }
+    }
+    else
+    {
+        <tr>
+            <td colspan="4">Không có bản ghi nào!!!</td>
+        </tr>
+    }
+</table>
+@section script
+{
+    <script>
+        var DeleteCategory = function (id) {
+            if (confirm("Bạn có chắc chắn muốn xóa hay không?") == true) {
+                location.href = 'DeleteCategory?id=' + id
+            }
+        }
+    </script>
+}

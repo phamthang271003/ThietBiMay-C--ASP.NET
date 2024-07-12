@@ -1,0 +1,156 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+      
+        <th>
+            Mã đơn hàng
+        </th>
+        <th>
+            Tên khách hàng
+        </th>
+        <th>
+            Số điện thoại
+        </th>
+        <th>
+            Tiền
+        </th>
+        <th>
+            Trạng thái
+        </th>
+        <th>
+            Ngày tạo
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+          @*<td>@item.Id</td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+
+            <td>
+                @string.Format("{0:0,#}", item.ToTalAmount)đ
+            </td>
+            <td>
+                @(item.TypePayment==1?"Chờ thanh toán":"Đã thanh toán")
+            </td>
+            <td>
+               @item.CreatedDate.ToString("dd/MM/yyyy")
+            </td>
+            <td>
+                <a href="~/Admin/Order/Detail/@item.Id" class="btn btn-sm btn-success">Xem</a>
+                <a href="#" class=" btn btn-sm btn-danger btnCapNhat" data-id ="@item.Id">Cập nhật</a>
+            </td>
+        </tr>
+    }
+    <tr>
+        <td colspan="9">
+            @{
+                int PrePage = ViewBag.Page - 1;
+                if (PrePage <= 0)
+                {
+                    PrePage = 1;
+                }
+                int NextPage = ViewBag.Page + 1;
+                if (NextPage > ViewBag.NoOfPages)
+                {
+                    NextPage = ViewBag.NoOfPages;
+                }
+            }
+
+            <ul class="pagination justify-content-center">
+                <li class="page-item ">
+                    <a href="~/Admin/Order/Index?page=@PrePage" class="page-link">PrePage</a>
+                </li>
+                @for (int i = 0; i < ViewBag.NoOfPages; i++)
+                {
+                    if (i + 1 == ViewBag.Page)
+                    {
+                        <li class="page-item active">
+                            <a href="~/Admin/Order/Index?page=@(i+1)" class="page-link">@(i+1)</a>
+
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a href="~/Admin/Order/Index?page=@(i+1)" class="page-link">@(i+1)</a>
+                        </li>
+                    }
+
+                }
+            <li class="page-item ">
+                <a href="~/Admin/Order/Index?page=@NextPage" class="page-link">NextPage</a>
+            </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Cập nhật trạng thái</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="txtOrderId"  value="0" />
+                <div class="form-group">
+                    <label>Trạng thái</label>
+                    <select class="form-control" id="ddTrangThai">
+                        <option value="2">Đã thanh toán</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary " id="btnLuu">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('body').on('click', '.btnCapNhat', function () {
+            var id = $(this).data("id");
+            $('#txtOrderId').val(id);
+            $('#exampleModal').modal('show');
+        });
+ 
+        $('body').on('click', '#btnLuu', function () {
+            var id = $('#txtOrderId').val();
+            var tt = $('#ddTrangThai').val();
+            $.ajax({
+                url: '/Admin/Order/UpdateTT',
+                type: 'POST',
+                data: { id: id, trangthai : tt },
+                success: function (rs) {  
+                    if (rs.Success == true) {
+                        location.reload();
+                    }
+                }
+            });
+        });
+
+    });
+</script>

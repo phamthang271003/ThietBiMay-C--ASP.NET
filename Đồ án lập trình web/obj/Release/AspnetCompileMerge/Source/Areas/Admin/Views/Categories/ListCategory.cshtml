@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Đồ_án_lập_trình_web.Models.Category>
+
+@{
+    ViewBag.Title = "ListCategory";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<a class="btn btn-primary mb-3" href="~/Admin/Categories/CreateCategory">Thêm mới danh mục</a>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th>#</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                <a class="btn btn-success" href="~/Admin/Categories/EditCategory/@item.CategoryID">Edit</a>
+                <a class="btn btn-danger" onclick="DeleteCategory(@item.CategoryID)" href="#">Delete</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section script
+{
+    <script>
+        var DeleteCategory = function (id) {
+            if (confirm("Bạn có chắc chắn muốn xóa hay không?") == true) {
+                location.href = 'DeleteCategory?id=' + id
+            }
+        }
+    </script>
+}

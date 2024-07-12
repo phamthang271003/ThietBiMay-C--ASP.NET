@@ -1,0 +1,145 @@
+﻿@model Đồ_án_lập_trình_web.Models.Product
+
+@{
+    ViewBag.Title = "Edit Product";
+}
+
+
+<div class="container" style="margin-top:50px;">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>Cập nhật khách hàng</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @using (Html.BeginForm("EditProduct", "Product", new { area = "Admin" }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.ProductID)
+
+                    <div class="form-group mb-3">
+                        <label class="control-label col-md-2">Image</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ProductImage, new { htmlAttributes = new { @class = "form-control" } })
+                            <input type="file" name="FileAnh" style="margin-top:10px" />
+                            @Html.ValidationMessageFor(model => model.ProductImage, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label col-md-2">Product Name</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label col-md-2">Price</label>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.ProductPrice, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ProductPrice, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label col-md-2">DateOfPurchase</label>
+                        <div class="col-md-10">
+                            <input class="form-control" name="DateOfPurchase" value="@Html.Raw(DateTime.Now.ToString("yyyy-MM-dd HH:mm").Replace(' ','T'))" type="datetime-local" />
+                            @Html.ValidationMessageFor(model => model.DateOfPurchase, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label col-md-2">AvailabilityStatus</label>
+                        <div class="col-md-10">
+                            <select class="form-control" id="AvailabilityStatus" name="AvailabilityStatus">
+                                @if (Model.AvailabilityStatus == "InStock")
+                                {
+                                    <option value="InStock" selected>In Stock</option>
+                                    <option value="OutOfStock">Out Of Stock</option>
+                                }
+                                else
+                                {
+                                    <option value="InStock">In Stock</option>
+                                    <option value="OutOfStock" selected>Out Of Stock</option>
+                                }
+
+                            </select>
+                            @Html.ValidationMessageFor(model => model.AvailabilityStatus, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label col-md-2">Category</label>
+                        <div class="col-md-10">
+                            <select class="form-control" id="CategoryID" name="CategoryID">
+
+                                @foreach (var cat in ViewBag.Categories)
+                                {
+                                    if (cat.CategoryID == Model.CategoryID)
+                                    {
+                                        <option value="@cat.CategoryID" selected>
+                                            @cat.CategoryName
+                                        </option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@cat.CategoryID">
+                                            @cat.CategoryName
+                                        </option>
+                                    }
+
+                                }
+
+                            </select>
+                            @Html.ValidationMessageFor(model => model.CategoryID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="control-label col-md-2">Brand</label>
+                        <div class="col-md-10">
+                            <select class="form-control" id="BrandID" name="BrandID">
+                                @foreach (var cat in ViewBag.Brands)
+                                {
+                                    if (cat.BrandID == Model.BrandID)
+                                    {
+                                        <option value="@cat.BrandID" selected>
+                                            @cat.BrandName
+                                        </option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@cat.BrandID">
+                                            @cat.BrandName
+                                        </option>
+                                    }
+
+                                }
+
+                            </select>
+                            @Html.ValidationMessageFor(model => model.BrandID, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input type="checkbox" id="Active" name="Active" value="True" checked="@Model.Active" />
+                        <label class="form-check-label" for="Active">Active</label>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Save" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

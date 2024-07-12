@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <setAcl path="D:\Các môn HK5\lập trình web asp.net\bt trên lớp\2001216167_PhamTranQuangThang_LTWeb\Đồ án lập trình web\obj\Release\Package\PackageTmp\App_Data" setAclResourceType="Directory" setAclAccess="Write" />
+</sitemanifest>

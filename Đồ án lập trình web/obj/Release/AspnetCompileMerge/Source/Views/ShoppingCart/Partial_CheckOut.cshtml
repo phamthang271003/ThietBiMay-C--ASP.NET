@@ -1,0 +1,68 @@
+﻿@model Đồ_án_lập_trình_web.Models.OrderViewModel
+
+@using (Ajax.BeginForm("CheckOut", "ShoppingCart", new AjaxOptions
+{
+    HttpMethod = "POST",
+    UpdateTargetId = "load_data",
+    OnComplete = "OnSuccessCO",
+    OnFailure = "OnFailure"
+}/*,new {@Id = "myForm"}*/))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <h5 class="card-title mb-3 fs-3 fw-bold">Thông tin khách hàng</h5>
+        <div class="row">
+            <div class="col-6 mb-3">
+                <label class="mb-0">Họ tên khách hàng</label>
+                <div class="form-outline">
+                    @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control", placeholder = "Type here", type = "text" } })
+                    @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-6 mb-3">
+                <label class="mb-0">Địa chỉ</label>
+                <div class="form-outline">
+                    @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control", placeholder = "Type here", type = "text" } })
+                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-6 mb-3">
+                <label class="mb-0">Số điện thoại</label>
+                <div class="form-outline">
+                    @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control", type = "tel", @Value = "+84" } })
+                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-6 mb-3">
+                <label class="mb-0">Email</label>
+                <div class="form-outline">
+                    <input type="email" name="Email" class="form-control" autocomplete="off"placeholder = "example@gmail.com"  />
+                    @*@Html.EditorFor(model => model., new { htmlAttributes = new { @class = "form-control", type = "email", placeholder = "example@gmail.com" } })*@
+                    @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="col-6 mb-3">
+                <label class="mb-0">Hình thức thanh toán</label>
+                <div class="form-outline">
+                    @Html.DropDownListFor(model => model.TypePayment, new List<SelectListItem>()
+             {
+            new SelectListItem() {Text = "COD",Value = "1",Selected = true},
+             new SelectListItem() {Text = "Chuyển khoản",Value = "2"}
+             }, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="float-start">
+            <button class="btn btn-danger border">Hủy</button>
+            <button type="submit" class="btn btn-success shadow-0 border">Đặt hàng</button>
+        </div>
+    </div>
+}
+
+
